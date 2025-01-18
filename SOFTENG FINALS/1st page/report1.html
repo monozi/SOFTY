@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analog</title>
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="style1.css">
+    <!-- FONT STYLE USED -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- ICONS USED -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<!-- HEADER SECTION -->
+    <header class="header">
+        <div class="page-title">
+            <span class="title">Reports</span>
+            <span class="description">Generate and view reports</span>
+        </div>
+        <div class="search-bar">
+            <i class='bx bx-search'></i>
+            <input type="search" placeholder="Search product, supplier, order">
+        </div>
+        <div class="header-action">
+            <i class='bx bxs-bell'></i>
+        </div>
+        <div class="profile">
+            <img src="images/icon.png" alt="user profile" class="user-image">
+            <div class="userName">
+                <span class="name">Sumting W.</span>
+                <span class="role">Manager</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <div class="content-wrapper">
+        <div class="container">
+            <h1>Reports Overview</h1>
+            <div class="metrics">
+                <div class="module">
+                    <div class="module-title">Production Rate (Module)</div>
+                    <div class="module-value">2500</div>
+                    <div class="module-description">
+                        <span class="inc-icon">↑</span>
+                        <span>50 more than last year</span>
+                    </div>
+                </div>
+                <div class="units">
+                    <div class="units-title">Production Rate (Units)</div>
+                    <div class="units-value">420</div>
+                </div>
+                <div class="produced">
+                    <div class="produced-title">Most Produced</div>
+                    <div class="produced-value">25</div>
+                </div>
+                <div class="workInProgress">
+                    <div class="workInProgress-title">Work in Progress</div>
+                    <div class="workInProgress-value">25</div>
+                    <div class="workInProgress-description">
+                        <span class="dec-icon">↓</span>
+                        <span>2% less than last year</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="req-container">
+            <h1>Reports Request</h1>
+            <button class="btn">Generate Report</button>
+        </div>
+    </div>
+</body>
+</html>

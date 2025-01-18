@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analog</title>
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="test.css">
+    <!-- FONT STYLE USED -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- ICONS USED -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<!-- HEADER SECTION -->
+    <header class="header">
+        <div class="page-title">
+            <span class="title">Reports</span>
+            <span class="description">Generate and view reports</span>
+        </div>
+        <div class="search-bar">
+            <i class='bx bx-search'></i>
+            <input type="search" placeholder="Search product, supplier, order">
+        </div>
+        <div class="header-action">
+            <i class='bx bxs-bell'></i>
+        </div>
+        <div class="profile">
+            <img src="images/icon.png" alt="user profile" class="user-image">
+            <div class="userName">
+                <span class="name">Sumting W.</span>
+                <span class="role">Manager</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <div class="productionCard">
+        <div class="container">
+            <div class="productionBox">
+                <h1>Production Rate</h1>
+                <canvas id="productionChart"></canvas>
+                <input id="calendar" type="month" onchange="filterChart(this)"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="producedCard">
+        <div class="container">
+            <div class="producedBox">
+                <h1>Most Produced</h1>
+                <canvas id="producedChart"></canvas>
+                <input id="calendar" type="month" onchange="filterChart(this)"/>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    <script src="test.js"></script>
+</body>
+</html>
